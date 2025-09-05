@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    min-height: 100vh;
+}
+
+#left {
+    flex: 1 0 33%;
+    background: url(pexels-pixabay-206359.jpg) center/cover;
+    min-height: 100vh;
+}
+
+#right {
+    flex: 1 0 66%;
+    min-height: 100vh;
+}
