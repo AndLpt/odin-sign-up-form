@@ -10,12 +10,56 @@
 }
 
 #left {
-    flex: 1 0 33%;
+    color: white;
+    flex: 1 0 40%;
     background: url(pexels-pixabay-206359.jpg) center/cover;
     min-height: 100vh;
+    font-family: "Fura", "Helvetica", "Arial", "Roboto", "Open Sans", sans-serif;
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo-container {
+    flex: 0 0 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkslategray;
+    min-height: 0; /* force it to shrink */
+}
+
+#text,
+#logo {
+    flex: 0 0 50%;
+    max-height: 100%; 
+    display: flex;
+    justify-content: flex-start;
+}
+
+#logo {
+    justify-content: flex-end;
+}
+
+#logo img {
+    max-width: 100%;   
+    max-height: 80%;
+    object-fit: contain;
 }
 
 #right {
-    flex: 1 0 66%;
+    flex: 1 0 60%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+.border, 
+.middle {
+    flex: 1 0 33%;
+}
+
+.border {
+    background-color: lightgray;
+}
+
