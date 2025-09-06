@@ -15,15 +15,23 @@
     background: url(pexels-pixabay-206359.jpg) center/cover;
     min-height: 100vh;
     font-family: "Fura", "Helvetica", "Arial", "Roboto", "Open Sans", sans-serif;
-    padding-top: 20%;
+    /* padding-top: 20%; */
     display: flex;
     flex-direction: column;
     font-size: 3rem; /* Adjust this value as needed */
     font-weight: bold; /
 }
 
+#test {
+    flex: 0 0 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 0; 
+}
+
 #logo-container {
-    flex: 0 0 14%;
+    flex: 0 0 40%;
     display: flex;
     opacity: 0.5;
     background-color: black;
@@ -59,24 +67,33 @@
     flex-direction: column;
 }
 
-.upper-border, 
-.middle,
-.lower-border {
-    flex: 1 0 33%;
-}
-
-.upper-border,
-.lower-border {
-    background-color: lightgray;
-}
-
 .upper-border {
-    padding-top: 60px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    flex: 0 0 33%;
+    background-color: lightgray;
+    padding: 60px 50px 20px 30px;
+    margin-bottom: 10px;
 }
+
 
 .upper-border p:first-child  {
     margin-bottom: 35px;
 }
 
+#form-upper {
+    display: flex;
+    gap: 25px;
+}
+
+.form-part {
+    display: flex;
+    flex-direction: column;
+}
+
+form > div {
+    padding-left: 30px;
+}
+
+h3,
+form input {
+    margin-bottom: 10px;
+}
