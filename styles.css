@@ -59,12 +59,24 @@
     flex-direction: column;
 }
 
-.border, 
-.middle {
+.upper-border, 
+.middle,
+.lower-border {
     flex: 1 0 33%;
 }
 
-.border {
+.upper-border,
+.lower-border {
     background-color: lightgray;
+}
+
+.upper-border {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.upper-border p:first-child  {
+    margin-bottom: 35px;
 }
 
