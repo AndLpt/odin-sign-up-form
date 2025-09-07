@@ -29,33 +29,34 @@
                     You know you want to
                 </p>
             </div>
-            <form>
-                <div>
+            <form action="" method="post">
+                <div id="one">
                     <h3>Let's do this!</h3>
                     <div id="form-upper">
                         <div class="form-part">
                             <label for="first-name">FIRST NAME</label>
-                            <input id="first-name" name="first-name" type="text">
+                            <input id="first-name" name="first-name" type="text" required>
                             <label for="email">EMAIL</label>
-                            <input id="email" name="email" type="email">
+                            <input id="email" name="email" type="email" required>
                             <label for="pwd">PASSWORD</label>
-                            <input id="pwd" name="pwd" type="password">
+                            <input id="pwd" name="pwd" type="password" required minlength="8">
                         </div>
                         <div class="form-part">
                             <label for="last-name">LAST NAME</label>
-                            <input id="last-name" name="last-name" type="text">
+                            <input id="last-name" name="last-name" type="text" required>
                             <label for="tel">PHONE NUMBER</label>
-                            <input id="tel" name="tel" type="tel">
+                            <input id="tel" name="tel" type="tel" required>
                             <label for="cnfpwd">CONFIRM PASSWORD</label>
-                            <input id="cnfpwd" name="cnfpwd" type="password">
+                            <input id="cnfpwd" name="cnfpwd" type="password" required minlength="8">
                         </div>
                     </div>
                 </div>
                     
                     
-                <section>
-                    tu
-                </section>
+                <div class="lower-border">
+                    <button class="btn" type="submit">Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </div>
             </form>
         </div>
     </div>

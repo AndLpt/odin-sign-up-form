@@ -15,19 +15,18 @@
     background: url(pexels-pixabay-206359.jpg) center/cover;
     min-height: 100vh;
     font-family: "Fura", "Helvetica", "Arial", "Roboto", "Open Sans", sans-serif;
-    /* padding-top: 20%; */
     display: flex;
     flex-direction: column;
-    font-size: 3rem; /* Adjust this value as needed */
-    font-weight: bold; /
+    font-size: 3rem; 
+    font-weight: bold; 
 }
 
 #test {
-    flex: 0 0 33%;
+    flex: 0 0 calc(100% / 3);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    min-height: 0; 
+    min-height: 0px; 
 }
 
 #logo-container {
@@ -35,7 +34,7 @@
     display: flex;
     opacity: 0.5;
     background-color: black;
-    min-height: 0; /* force it to shrink */
+    min-height: 0px; /* force it to shrink */
 }
 
 #text,
@@ -68,10 +67,9 @@
 }
 
 .upper-border {
-    flex: 0 0 33%;
+    flex: 0 0 calc(100% / 3);
     background-color: lightgray;
     padding: 60px 50px 20px 30px;
-    margin-bottom: 10px;
 }
 
 
@@ -79,9 +77,25 @@
     margin-bottom: 35px;
 }
 
+form {
+    flex: 0 0 calc(100% * 2 / 3);
+    display: flex;
+    flex-direction: column;
+}
+
+.one,
+.lower-border {
+    flex: 1 1 50%;
+}
 #form-upper {
     display: flex;
     gap: 25px;
+}
+
+h3,
+#form-upper,
+#one {
+    background-color: #f8f9fa;;
 }
 
 .form-part {
@@ -96,4 +110,46 @@ form > div {
 h3,
 form input {
     margin-bottom: 10px;
+}
+
+h3 {
+    padding-top: 10px;
+}
+
+.lower-border {
+    padding-right: 50px;
+    background-color: lightgray;
+}
+
+button {
+    color: white;
+    background-color: #596D48;
+    border-radius: 5px;
+    margin: 15px 0px;
+    border: none;
+    box-shadow: none;
+    padding: 5px 10px;  
+    font-size: 1rem; 
+}
+
+input {
+    border: 2px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+input:focus {
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+    border: 2px solid blue;
+    outline: none;
+}
+
+#pwd:invalid,
+#cnfpwd:invalid {
+    border: 2px solid red;
+}
+
+a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
 }
